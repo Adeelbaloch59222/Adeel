@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeel's Portfolio</title>
+  <meta name="description" content="Adeel Ahmed's professional portfolio: IT support, web design, and technical expertise in Karachi.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fde2e4, #fadadd, #e0f2fe);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .section-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    }
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-card {
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <header class="bg-gradient-to-r from-[#d46a6a] via-[#eb9d8e] to-[#f3d1bf] text-white py-6 px-8 shadow-lg" role="banner">
+    <div class="relative flex items-center justify-center">
+      <div class="absolute top-4 left-6">
+        <img src="profile-img.jpg" alt="Adeel Ahmed profile photo" class="w-20 h-20 rounded-full border-2 border-white shadow-md object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+      </div>
+      <div class="absolute top-4 right-6 flex gap-4">
+        <a href="https://www.linkedin.com/in/adeel-ahmed-ab6ab8335" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="bi bi-linkedin text-white text-2xl"></i>
+        </a>
+        <a href="https://wa.me/923092532645" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp chat">
+          <i class="bi bi-whatsapp text-white text-2xl"></i>
+        </a>
+      </div>
+      <h1 class="text-4xl font-bold text-center w-full mt-2">Adeel</h1>
+    </div>
+    <nav class="mt-4 flex justify-center gap-6" role="navigation" aria-label="Main navigation">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#experience" class="hover:underline">Experience</a>
+      <a href="#education" class="hover:underline">Education</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="p-2 sm:p-6" id="main-content">
+    <section id="about" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-person-fill text-blue-500"></i> About Me</h2>
+      <p>Experienced Internet Café Manager and IT Support Technician skilled in troubleshooting, customer service, web design (HTML/CSS), and office tools.</p>
+    </section>
+
+    <section id="skills" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-tools text-purple-500"></i> Skills</h2>
+      <ul class="list-disc pl-6">
+        <li>HTML & CSS</li>
+        <li>IT Support</li>
+        <li>Windows Management</li>
+        <li>Office IT Assistant</li>
+        <li>Help Desk</li>
+        <li>Microsoft Office</li>
+      </ul>
+      <div class="mt-4 grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm">HTML & CSS</label>
+          <progress value="85" max="100" class="w-full">85%</progress>
+        </div>
+        <div>
+          <label class="block text-sm">IT Support</label>
+          <progress value="90" max="100" class="w-full">90%</progress>
+        </div>
+        <div>
+          <label class="block text-sm">Windows Management</label>
+          <progress value="80" max="100" class="w-full">80%</progress>
+        </div>
+        <div>
+          <label class="block text-sm">Microsoft Office</label>
+          <progress value="75" max="100" class="w-full">75%</progress>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-folder-fill text-orange-500"></i> Projects</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Personal Portfolio Website</strong> –
+          <a href="https://github.com/Adeelbaloch59222/Adeel" class="text-blue-600" target="_blank" rel="noopener noreferrer">Source Code</a>
+        </li>
+        <!-- Add more projects here -->
+      </ul>
+    </section>
+
+    <section id="experience" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-briefcase-fill text-indigo-500"></i> Experience</h2>
+      <p><strong>Internet Cafe Operator & Manager</strong><br>Sam Internet Cafe, Karachi (2022–2024)</p>
+      <ul class="list-disc pl-6">
+        <li>Helped customers with computer and software usage.</li>
+        <li>Troubleshot hardware/software issues.</li>
+        <li>Handled billing and sales reporting.</li>
+        <li>Maintained service quality.</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-mortarboard-fill text-green-500"></i> Education</h2>
+      <ul class="list-disc pl-6">
+        <li><strong>Associate Degree in Arts</strong> – Benazir Bhutto Shaheed University, 2024</li>
+        <li><strong>Diploma in IT</strong> – Apex Educator, 2023</li>
+        <li><strong>Intermediate</strong> – Govt. Degree Boys College, 2021</li>
+        <li><strong>Matriculation</strong> – Madarasa Talimul Islam School, 2016</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section-card" tabindex="0">
+      <h2 class="text-3xl font-extrabold"><i class="bi bi-envelope-fill text-red-500"></i> Contact</h2>
+      <p><strong>Location:</strong> Karachi, Pakistan</p>
+      <p><strong>Email:</strong> <a href="mailto:adeelbaloch59222@gmail.com" class="text-blue-600">adeelbaloch59222@gmail.com</a></p>
+      <p><strong>Phone/WhatsApp:</strong> <a href="tel:+923092532645" class="text-blue-600">+92 309 2532645</a></p>
+      <form action="mailto:adeelbaloch59222@gmail.com" method="POST" class="mt-4 flex flex-col gap-2" aria-label="Contact form">
+        <input type="text" name="name" placeholder="Your Name" required class="border rounded p-2">
+        <input type="email" name="email" placeholder="Your Email" required class="border rounded p-2">
+        <textarea name="message" placeholder="Your Message" required class="border rounded p-2"></textarea>
+        <button type="submit" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Send</button>
+      </form>
+      <div class="mt-6">
+        <iframe
+          src="https://maps.google.com/maps?q=Dawood%20Goth%20Baldia%20Town%20Karachi%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="300"
+          style="border:0; border-radius: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+          allowfullscreen=""
+          loading="lazy"
+          title="Map of Karachi"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 text-gray-600" role="contentinfo">
+    &copy; 2025 Adeel Ahmed. All rights reserved.
+  </footer>
+</body>
+</html>
